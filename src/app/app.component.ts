@@ -47,6 +47,10 @@ export class AppComponent implements OnInit {
     } else {
       this.evaluateHand();
     }
+
+    if (this.getSelectedCardsCount() === 5) {
+      window.scrollTo(0, 0);
+    }
   }
 
   getSelectedCardsCount() {
